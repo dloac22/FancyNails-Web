@@ -1,0 +1,195 @@
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --gold: #FFE998;
+  --brown: #57370D;
+  --bg: #0b0e12;
+  --muted: #cfd6e3;
+  --card: #171b21;
+  --nav-height: 64px; /* Fixed variable name */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Base Styles (Mobile First) --- */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: var(--brown);
+  color: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+  height: var(--nav-height);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Brand Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  text-decoration: none;
+  color: var(--gold);
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-logo h1 {
+  margin: 0;
+  line-height: 1;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+/* Hide desktop nav and call button by default */
+.nav-main {
+  display: none;
+}
+
+/* Hamburger button is visible by default */
+.hamburger {
+  display: block;
+  border: none;
+  background: transparent;
+  color: var(--white);
+  padding: .35rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.hamburger:focus {
+  outline: 2px solid rgba(255, 233, 152, .6);
+  outline-offset: 2px;
+}
+
+/* --- Mobile Menu Panel --- */
+.nav-mobile {
+  position: fixed;
+  top: var(--nav-height); /* Position right below the navbar */
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, var(--brown), #3e2709);
+  transform: translateY(-110%);
+  transition: transform .28s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  gap: 8px;
+  z-index: 90;
+  pointer-events: none;
+  visibility: hidden;   
+}
+
+.nav-mobile.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.nav-link {
+  display: block;
+  padding: 12px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+  background: rgba(0, 0, 0, .08);
+}
+
+.nav-link:hover {
+  background: rgba(0, 0, 0, .16);
+  color: var(--gold);
+}
+
+/* Special style for the call button in the mobile menu */
+.nav-link.call {
+  background: var(--gold);
+  color: var(--brown);
+  text-align: center;
+  font-weight: 700;
+}
+
+/* --- Desktop Styles --- */
+@media (min-width: 768px) {
+  /* Show the desktop nav container */
+  .nav-main {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  /* Hide the hamburger on desktop */
+  .hamburger {
+    display: none;
+  }
+  
+  /* Desktop nav items */
+  .nav-desktop {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+  }
+
+  .nav-item {
+    color: var(--white);
+    text-decoration: none;
+    position: relative;
+    font-weight: 600;
+  }
+
+  .nav-item:hover {
+    color: var(--gold);
+  }
+
+  .nav-item.active {
+    color: var(--gold);
+  }
+
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 0;
+    background: var(--gold);
+    transition: width .25s ease;
+  }
+
+  .nav-item:hover::after {
+    width: 100%;
+  }
+
+  .call-button {
+    margin-left: .25rem;
+    padding: .45rem .8rem;
+    border-radius: 999px;
+    background: var(--gold);
+    color: var(--brown);
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .call-button:hover {
+    filter: brightness(.95);
+  }
+}
