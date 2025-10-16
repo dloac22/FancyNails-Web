@@ -1,5 +1,5 @@
 import Hero from '../components/Hero.jsx'
-import { CATEGORIES_PREVIEW } from '../data/servicesPreview.js'
+import { CATEGORIES_PREVIEW } from '../data/ServicesPreview.js'
 import { WORKS_PREVIEW } from '../data/worksPreview.js'
 import { Link } from 'react-router-dom'
 
