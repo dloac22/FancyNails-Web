@@ -20,8 +20,13 @@ html,body,#root{height:100%}
 body{
   margin:0;
   font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-  background:#0b0e12;
-  color:var(--text)}
+  color:var(--text);
+  background-image: url('/client/public/assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 
 img{
   max-width:100%;display:block

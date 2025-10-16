@@ -36,7 +36,7 @@ export default function Home() {
       <section className="section container">
         <div className="section-head">
           <h2>Our Works</h2>
-          <p>Selected designs from recent sets.</p>
+          <p>Our designs for customers.</p>
         </div>
 
         <div className="grid">
