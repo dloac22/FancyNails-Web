@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-grid container">
         <div className="about">
-          <img src="/client/public/asset/logo/noBG.png" className="mono" alt="Fancy Nails" />
+          <img src="/client/public/assets/logo/noBG.png" className="mono" alt="Fancy Nails" />
           <p>
             <strong>Fancy Nails & Spa</strong> in Worcester, Massachusetts.
 			      Welcome to Fancy World- where beauty meets perfection
