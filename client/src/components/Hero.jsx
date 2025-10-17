@@ -8,7 +8,8 @@ export default function Hero() {
           Book Now
         </a>
       </div>
-      <img className="hero-art" src="/client/public/asset/art/heroBanner.jpg" alt="Model with nails" />
+      <img className="hero-art" src="/client/public/assets/gallery/heroBanner.jpg" alt="Model with nails" />
     </section>
   )
 }
+sxcv
