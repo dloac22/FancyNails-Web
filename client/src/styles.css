@@ -21,7 +21,7 @@ body{
   margin:0;
   font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   color:var(--text);
-  background-image: url('/client/public/assets/background/main.jpg');
+  background-image: url('/assets/background/main.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -165,7 +165,7 @@ img{
   align-items:center;
   min-height:62vh;
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url('/client/public/assets/background/hero.jpg') center/cover no-repeat;
+              url('/assets/background/hero.jpg') center/cover no-repeat;
 }
 
 .hero-inner{
