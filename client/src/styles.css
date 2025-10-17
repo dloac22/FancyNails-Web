@@ -33,7 +33,7 @@ body{
   content:"";
   position: fixed;
   inset: 0;
-  background: url("/assets/backgrounds/vertical-bg.jpg") center / cover no-repeat;
+  background: url("/assets/background/main.jpg") center / cover no-repeat;
   filter: blur(10px) saturate(85%);
   opacity: .22;                         /* keep it subtle */
   transform: scale(1.05);               /* avoid edge gaps after blur */
@@ -203,7 +203,7 @@ img{
   position: absolute; inset: -10% -5% 0; z-index: 0;
   background:
     linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55)),
-    url("/assets/hero/hero-banner.jpg") center / cover no-repeat;
+    url("/assets/background/hero.jpg") center / cover no-repeat;
   filter: blur(2px) saturate(90%);
   opacity: .5;                      /* keep it understated */
 }
