@@ -3,21 +3,23 @@ import { SERVICES } from '../data/servicesData.js'
 export default function ServicesPage() {
   return (
     <section className="section container">
-      <h2>Appointments & Walk-ins Welcome
-
-          Gift Certificates are Available!
-
-          10-DAY GUARANTEE POLICY
-
-          <li> We are happy to fix your lift, chip, crack, or broken nails within 10 days of service. </li>
-
-          <li>The 10-day guarantee policy will not be applied to regular polish.</li> 
-
-          If you are dissatisfied with the services, please share your experience at email: 
-          fancynailspa75@gmail.com
-
-          Your satisfaction is essential to us.</h2>
       <h1>Services & Prices</h1>
+
+      <div className="card">
+        <h2>Appointments & Walk-ins Welcome</h2>
+        <p>Gift Certificates are Available!</p>
+
+        <h3>10-Day Guarantee Policy</h3>
+        <ul className="prices">
+          <li>We are happy to fix lifts, chips, cracks, or broken nails within 10 days of service.</li>
+          <li>The 10-day guarantee policy will not be applied to regular polish.</li>
+        </ul>
+        <p>
+          If you are dissatisfied with the services, please share your experience at
+          {' '}<a href="mailto:fancynailspa75@gmail.com">fancynailspa75@gmail.com</a>. Your satisfaction is essential to us.
+        </p>
+      </div>
+
       {SERVICES.map(section => (
         <div className="category card" key={section.category}>
           <h2>{section.category}</h2>
