@@ -6,6 +6,18 @@ import ServicesPage from './pages/ServicesPage.jsx'
 import WorksPage from './pages/WorksPage.jsx'
 import SocialPage from './pages/SocialPage.jsx'
 
+// TEMP minimal components
+function Home() {
+  return (
+    <section style={{ padding: 24 }}>
+      <h1 style={{ color: "#ffe998" }}>Home works ✅</h1>
+      <p style={{ color: "#fff" }}>
+        If you see this, routing/rendering is fine. The blank page was not Vercel.
+      </p>
+    </section>
+  );
+}
+
 export default function App() {
   return (
     <div className="site-bg">
