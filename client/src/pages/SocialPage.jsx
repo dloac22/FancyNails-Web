@@ -7,7 +7,13 @@ export default function SocialPage() {
   ]
   return (
     <section className="section container">
-      <h1>Follow Us</h1>
+      <h1>About Us</h1>
+      <p> As soon as you walk in, you’ll feel like you’re being transported to a different world. 
+        The soft music, the relaxing ambiance, and the friendly staff will make you feel right at home.
+        We have tables for nails, spa chairs for pedicures, and very well-trained technicians with many years of experience.
+        Besides, we offer various nail care services, including acrylic and gel nails, pedicures, manicures, and more.
+        With the highest quality products, we ensure you have a perfect experience. 
+        Our goal is to provide you with a luxurious experience that leaves you feeling refreshed and beautiful.</p>
       <div className="cards social-cards">
         {links.map(x => (
           <a key={x.name} className="card link-card" href={x.href} target="_blank" rel="noreferrer">

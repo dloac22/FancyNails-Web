@@ -21,7 +21,7 @@ body{
   margin:0;
   font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   color:var(--text);
-  background-image: url('/client/public/assets/background.jpg');
+  background-image: url('/client/public/assets/background/main.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -164,17 +164,19 @@ img{
   display:flex;
   align-items:center;
   min-height:62vh;
-  background:
-  radial-gradient(60% 80% at 70% 70%, rgba(120,200,240,.28), transparent 60%),
-  linear-gradient(180deg,#0b0e12 0%, #10151d 60%, #0b0e12 100%)
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('/client/public/assets/background/hero.jpg') center/cover no-repeat;
 }
 
 .hero-inner{
-  padding:72px 16px;max-width:720px
+  padding:72px 16px;
+  max-width:720px
 }
 
 .hero h1{
-  font-size:48px;line-height:1.1;margin:0 0 16px
+  font-size:48px;
+  line-height:1.1;
+  margin:0 0 16px
 }
 
 .accent{

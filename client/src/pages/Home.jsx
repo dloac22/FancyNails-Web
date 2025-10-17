@@ -12,13 +12,6 @@ export default function Home() {
       <section className="section container">
         <div className="section-head">
           <h2>Our Services</h2>
-          <p> <span className="highlight">Appointments & Walk-ins Welcome</span> </p>
-          <p>Gift Certificates are Available!</p>
-          <p><span>10-DAY GUARANTEE POLICY</span></p>
-          <li>We are happy to fix your lift, chip, crack, or broken nails within 10 days of service.</li>
-          <li>The 10-day guarantee policy will not be applied to regular polish.</li>
-              <p>If you are dissatisfied with the services, please share your experience at email: fancynailspa75@gmail.com </p>
-              <p>Your satisfaction is essential to us.</p>
           <p>Manicure • Pedicure • Dipping • Acrylic • Gel X / Builder</p>
         </div>
 
