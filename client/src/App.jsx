@@ -18,6 +18,7 @@ function Home() {
   );
 }
 
+/*
 export default function App() {
   return (
     <div className="site-bg">
@@ -32,3 +33,4 @@ export default function App() {
     </div>
   )
 }
+  */
