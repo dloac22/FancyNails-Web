@@ -8,7 +8,7 @@ import SocialPage from './pages/SocialPage.jsx'
 
 export default function App() {
   return (
-    <div className="app">
+    <div className="site-bg">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
