@@ -21,6 +21,7 @@ export default function Footer() {
           <ul>
             <li>📞 (508) 373-2550</li>
             <li>📍 582 W Boylston St, Worcester, MA 01606 </li>
+            <li>📧 <a href="mailto:fancynailspa75@gmail.com">fancynailspa75@gmail.com</a></li>
           </ul>
 
           <h3>Business hours</h3>
