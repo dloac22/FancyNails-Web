@@ -6,6 +6,8 @@ import Home from './pages/Home.jsx'
 import ServicesPage from './pages/ServicesPage.jsx'
 import WorksPage from './pages/WorksPage.jsx'
 import SocialPage from './pages/SocialPage.jsx'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function App() {
   return (

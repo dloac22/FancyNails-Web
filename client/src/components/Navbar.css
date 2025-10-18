@@ -23,7 +23,6 @@ html, body {
   right: 0;
   z-index: 100;
   background: transparent;
-  color: var(--white);
   box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
   height: var(--nav-height);
 }
@@ -118,7 +117,7 @@ html, body {
 
 .nav-link:hover {
   background: rgba(0, 0, 0, .16);
-  color: var(--black);
+  color: var(--white);
 }
 
 /* Special style for the call button in the mobile menu */
@@ -128,6 +127,7 @@ html, body {
   text-align: center;
   font-weight: 700;
 }
+
 
 /* --- Desktop Styles --- */
 @media (min-width: 768px) {
@@ -158,11 +158,11 @@ html, body {
   }
 
   .nav-item:hover {
-    color: var(--black);
+    color: var(--gold);
   }
 
   .nav-item.active {
-    color: var(--black);
+    color: var(--white);
   }
 
   .nav-item::after {

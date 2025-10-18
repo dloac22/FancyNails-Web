@@ -2,6 +2,8 @@ import Hero from '../components/Hero.jsx'
 import { CATEGORIES_PREVIEW } from "../data/ServicesPreview.js";
 import { WORKS_PREVIEW } from '../data/worksPreview.js'
 import { Link } from 'react-router-dom'
+import SimpleSlider from "../components/WorkPreviewSlider.jsx";
+
 
 export default function Home() {
   return (
@@ -32,15 +34,14 @@ export default function Home() {
       </section>
 
       {/* Works preview */}
+      
       <section className="section container">
         <div className="section-head">
           <h2>Our Works</h2>
           <p>Our designs for customers.</p>
         </div>
 
-        <div className="grid">
-          {WORKS_PREVIEW.map((src, i) => <img key={i} src={src} alt="Nail design" loading="lazy" />)}
-        </div>
+        <SimpleSlider images={WORKS_PREVIEW} />
 
         <div className="center">
           <Link to="/works" className="btn">See full gallery</Link>
@@ -49,3 +50,4 @@ export default function Home() {
     </>
   )
 }
+

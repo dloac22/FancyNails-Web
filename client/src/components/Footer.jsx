@@ -42,7 +42,7 @@ export default function Footer() {
       </div>
 
       <div className="legal">
-        © 2025 Fancy Nails & Spa design by Fancy Nails & Spa • All Rights Reserved | nail salon in 10606 | best nail salon in 01606
+        ©2025 Fancy Nails & Spa design by <a href="https://github.com/dloac22" target="_blank" rel="noreferrer">Datthe</a> • All Rights Reserved | nails salon in 01606 | nails salon in worcester | nails salon near me
       </div>
     </footer>
   )

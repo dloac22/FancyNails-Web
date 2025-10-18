@@ -2,6 +2,7 @@
 export const SERVICES = [
   {
     category: "Pedicure",
+    bg: "/assets/services/pedicure1.jpg",
     items: [
       { name: "The Classic", price: 40, gelPrice: 55,
         desc: "Swift, essential foot care. Includes basic cleanup and gentle massage with a warm towel." },
@@ -17,6 +18,7 @@ export const SERVICES = [
   },
   {
     category: "Manicure",
+    bg: "/assets/services/manicure.PNG",
     items: [
       { name: "Classic Manicure", price: 20, gelPrice: 35,
         desc: "Meticulous nail trimming and shaping, cuticle care, soothing massage with lotion" },
@@ -26,6 +28,7 @@ export const SERVICES = [
   },
   {
     category: "Acrylic / Color Powder",
+    bg: "/assets/services/acrylic.jpg",
     items: [
       { name: "Full Set", priceFrom: 50 },
       { name: "Refill", priceFrom: 40 },
@@ -34,6 +37,7 @@ export const SERVICES = [
   },
   {
     category: "Add-On",
+    bg: "/assets/services/acrylic.jpg",
     items: [
       { name: "Special Shape", price: 5 },
       { name: "Extra Length", priceFrom: 5 },
@@ -42,7 +46,7 @@ export const SERVICES = [
       { name: "Change Polish (Hands, Regular)", price: 15 },
       { name: "Change Polish (Hands, Gel)", price: 25 },
       { name: "Change Polish (Toes, Regular)", price: 20 },
-      { name: "Change Polish (Toes, Gel)", price: 30 },
+      { name: "Change Polish (Toes, Gel)", price: 35 },
       { name: "Nail Removal (Gel/Dip)", price: 10 },
       { name: "Nail Removal (Acrylic/Hard Gel)", price: 15 },
       { name: "Regular French", price: 5 },
@@ -54,6 +58,7 @@ export const SERVICES = [
   },
   {
     category: "Dipping Powder",
+    bg: "/assets/services/dippingPowder.jpg",
     items: [
       { name: "Dipping w/ Natural Nails", priceFrom: 45 },
       { name: "Dipping w/ Tip On", priceFrom: 50 },
@@ -63,6 +68,7 @@ export const SERVICES = [
   },
   {
     category: "Gel X / Builder",
+    bg: "/assets/services/gelX.jpg",
     items: [
       { name: "Gel X Extension", priceFrom: 65 },
       { name: "Hard/Builder Gel Full Set", priceFrom: 60 },
@@ -71,6 +77,7 @@ export const SERVICES = [
   },
   {
     category: "Kid Services (Under 9)",
+    bg: "/assets/services/kidservices.JPG",
     items: [
       { name: "Manicure – Regular Color", price: 15 },
       { name: "Manicure – Gel Color", price: 20 },

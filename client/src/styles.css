@@ -79,9 +79,6 @@ img{
   color:var(--muted)
 }
 
-.grid{
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px
-}
 
 .cards{
   display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px
@@ -111,7 +108,7 @@ img{
   color:var(--brown);
   text-decoration:none;
   font-weight:600;
-  background:transparent
+  background: var(--gold); 
 }
 
 .btn:hover{
@@ -207,9 +204,9 @@ img{
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* overlay for contrast */
     url("/assets/background/hero.PNG") center center / cover no-repeat; /* hero image */
 
-  /* Don’t inherit global background */
+  
   background-color: transparent;
-  background-attachment: scroll; /* fix parallax issues on mobile */
+  background-attachment: scroll; 
   z-index: 1;
 }
 
@@ -230,7 +227,9 @@ img{
   border-radius: 999px;
   font-weight: 700;
   text-decoration: none;
-  display: inline-block; /* Good practice for buttons/links */
+  display: inline-block; 
+  font-size: 1.5rem;
+
 }
 
 
@@ -238,7 +237,6 @@ img{
 .category{
   margin: 20px;
   padding: 5px;
-
 }
 
 .prices{
@@ -249,7 +247,7 @@ img{
 
 .prices li{
   padding:10px 20px;
-  border-bottom:1px dashed #2a313a
+  border-bottom:1px dashed #2a313a;
 }
 
 .row{
@@ -258,9 +256,122 @@ img{
   gap:12px
 }
 
-.amount{
-  color:var(--gold)
+.muted{
+  color:var(--white);
 }
+
+.amount{
+  color:var(--gold);
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFE998, 0 0 40px #b3d91b;
+}
+
+/* --- Full-screen background service sections --- */
+
+
+/* the info card inside the appointments hero */
+.notice.card {
+  background: transparent;
+  border: none;
+  font-size: larger;
+}
+
+
+/* dark overlay for legibility */
+.service-overlay {
+  background: rgba(0,0,0,.55);
+  width: 100%;
+  height: 100%;
+}
+
+.service-section {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw; /* expand beyond container */
+  margin-right: -50vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0; /* top/bottom spacing */
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Overlay for readability */
+.service-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+}
+
+/* inner layout */
+.service-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* text styles */
+.service-section h2 {
+  font-size: 2rem;
+  color: var(--gold);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-section .prices li {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  color: #f2f2f2;
+}
+
+.service-section .amount {
+  color: var(--gold);
+}
+.service-section .muted {
+  color: #ffffff;
+}
+
+/* optional: subtle parallax feel */
+.service-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  z-index: 0;
+}
+
+
+/* Our Works*/
+.works-slider {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.works-slider .slide img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* optional: make dots match your theme */
+.slick-dots li button:before {
+  color: var(--gold);
+  opacity: 0.7;
+}
+.slick-dots li.slick-active button:before {
+  color: #fff;
+  opacity: 1;
+}
+
 
 /* Footer */
 .footer{
