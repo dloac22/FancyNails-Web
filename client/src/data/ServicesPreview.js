@@ -2,13 +2,13 @@ export const CATEGORIES_PREVIEW = [
   {
     slug: "manicure",
     title: "Manicure",
-    img: "/assets/services/manicure.jpg",
+    img: "/assets/services/manicure.PNG",
     snippet: "Classic, gel, and signature manicures."
   },
   {
     slug: "pedicure",
     title: "Pedicure",
-    img: "/assets/services/pedicure.jpg",
+    img: "/assets/services/pedicure.JPG",
     snippet: "From classic to deluxe spa pedicures."
   },
   {
@@ -20,7 +20,7 @@ export const CATEGORIES_PREVIEW = [
   {
     slug: "acrylic",
     title: "Acrylic / Color Powder",
-    img: "/assets/services/acrylic.jpg",
+    img: "/assets/services/acrylic.JPG",
     snippet: "Full sets, refills, and ombré designs."
   },
   {
@@ -32,7 +32,7 @@ export const CATEGORIES_PREVIEW = [
   {
     slug: "kids",
     title: "Kid Services (Under 9)",
-    img: "/assets/services/kidsService.jpg",
+    img: "/assets/services/kidservices.JPG",
     snippet: "Kids manicures and pedicures."
   }
 ]

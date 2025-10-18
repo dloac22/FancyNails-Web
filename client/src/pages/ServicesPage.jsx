@@ -3,11 +3,12 @@ import { SERVICES } from '../data/servicesData.js'
 export default function ServicesPage() {
   return (
     <section className="section container">
-      <h1>Services & Prices</h1>
+      
 
-      <div className="card">
-        <h2>Appointments & Walk-ins Welcome</h2>
-        <p>Gift Certificates are Available!</p>
+      
+        <h1>Appointments & Walk-ins Welcome</h1>
+        <div className="category card">
+        <p><span>Gift Certificates are available!</span></p>
 
         <h3>10-Day Guarantee Policy</h3>
         <ul className="prices">
@@ -19,7 +20,7 @@ export default function ServicesPage() {
           {' '}<a href="mailto:fancynailspa75@gmail.com">fancynailspa75@gmail.com</a>. Your satisfaction is essential to us.
         </p>
       </div>
-
+      <h1>Services & Prices</h1>
       {SERVICES.map(section => (
         <div className="category card" key={section.category}>
           <h2>{section.category}</h2>

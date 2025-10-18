@@ -14,6 +14,8 @@ export default function SocialPage() {
         Besides, we offer various nail care services, including acrylic and gel nails, pedicures, manicures, and more.
         With the highest quality products, we ensure you have a perfect experience. 
         Our goal is to provide you with a luxurious experience that leaves you feeling refreshed and beautiful.</p>
+
+      <h4>Follow Us on Social Media!</h4>
       <div className="cards social-cards">
         {links.map(x => (
           <a key={x.name} className="card link-card" href={x.href} target="_blank" rel="noreferrer">

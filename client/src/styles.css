@@ -59,7 +59,8 @@ img{
 
 /* Containers */
 .container{
-  max-width:1200px;margin:0 auto;padding:0 16px
+  max-width:1200px;margin:0 auto;padding:0 16px;
+  color: var(--white)
 }
 
 .section{
@@ -95,8 +96,11 @@ img{
 }
 
 .card-body{
-  padding:12px
+  padding:12px;
+  color: white;
 }
+
+
 
 /* Buttons */
 .btn{
@@ -201,7 +205,7 @@ img{
   /* --- Hero-specific background --- */
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* overlay for contrast */
-    url("/assets/background/bg1.jpg") center center / cover no-repeat; /* hero image */
+    url("/assets/background/hero.PNG") center center / cover no-repeat; /* hero image */
 
   /* Don’t inherit global background */
   background-color: transparent;
@@ -232,7 +236,9 @@ img{
 
 /* Prices/Services */
 .category{
-  margin:20px 0
+  margin: 20px;
+  padding: 5px;
+
 }
 
 .prices{
@@ -242,7 +248,7 @@ img{
 }
 
 .prices li{
-  padding:10px 0;
+  padding:10px 20px;
   border-bottom:1px dashed #2a313a
 }
 

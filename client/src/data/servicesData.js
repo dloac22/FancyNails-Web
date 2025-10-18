@@ -4,24 +4,24 @@ export const SERVICES = [
     category: "Pedicure",
     items: [
       { name: "The Classic", price: 40, gelPrice: 55,
-        desc: "Essential cleanup and gentle massage with warm towel." },
+        desc: "Swift, essential foot care. Includes basic cleanup and gentle massage with a warm towel." },
       { name: "Lavish Pedicure", price: 50, gelPrice: 65,
-        desc: "Scented soak + sea salt, detox scrub, mask, warm towel; choice of paraffin wax or hot stones." },
+        desc: "Enhance your well-being with a foot soak using your preferred scent and sea salt to eliminate toxins. This treatment is followed by a detoxifying scrub for deep cleansing and a soothing mask with a warm towel for relaxation. Conclude your experience by selecting   either orange-scented paraffin wax or calming hot stones. This wellness program aims to relieve tension and restore energy balance." },
       { name: "Volcano Spa Pedicure", price: 60, gelPrice: 75,
-        desc: "Detox soak (sea salt + bubble bath) with warm neck scarf; sugar scrub, cream mask, hot towel, paraffin, hot stone massage." },
+        desc: "Our premium foot spa provides a volcanic experience designed for nourishment and deep relaxation. The treatment begins with a detoxifying foot soak using sea salt and bubble bath and a warm scarf around your neck which enhances circulation and aids in detoxification. This is followed by a gentle sugar scrub to smooth and brighten the skin, a nourishing cream mask, and a soothing hot towel treatment. An orange-scented paraffin wax is then applied for hydration. The experience concludes with a warm massage with hot stones, effectively toning and relaxing tired muscles." },
       { name: "Collagen Spa Pedicure", price: 80, gelPrice: 95,
-        desc: "Bath bombs soak, warm neck & eye wrap; take-home hand/foot cream; sugar scrub, mask, warm towel, hot stone massage with gentle steam." },
+        desc: "Your experience begins with the selection of your preferred scent, followed by a relaxing foot soak enhanced with fizzing bath bombs. To elevate comfort, a warm neck and eye wrap is provided, while nourishing hand and foot cream are prepared for you to take home. The treatment continues with a rejuvenating sugar scrub, a soothing mask, and a warm towel wrap to deeply refresh the skin. Finally, indulge in a therapeutic hot stone massage with gentle steam, focusing on the legs and feet to boost circulation, ease tension, and leave you feeling renewed." },
       { name: "Fancy Pedicure", price: 100, gelPrice: 115,
-        desc: "Neck towel + eye mask; jelly pearls soak; diamond sugar scrub; cooling gel + mud mask; steam massage with massage cream, oil candle, hot stones; take-home gift." }
+        desc: "Treat yourself to our delightful foot spa experience! You will begin with a cozy warm neck towel and a soothing eye mask to help you relax. Next, enjoy a luxurious foot soak filled with jelly pearls and sea salts, followed by a gentle diamond sugar scrub that leaves your skin feeling fresh. We will then give your feet a refreshing wash and apply a cooling gel and mud mask that will reveal their natural softness.After that, relax even more with our comforting steam massage, using our lovely massage cream, along with our signature Massage Oil Candle and soothing hot stones to melt away any tension.You will also receive a special gift to take home with you. This foot spa treatment is a wonderful way to show yourself some love and care!" }
     ]
   },
   {
     category: "Manicure",
     items: [
       { name: "Classic Manicure", price: 20, gelPrice: 35,
-        desc: "Trim & shape, cuticle care, soothing lotion massage." },
+        desc: "Meticulous nail trimming and shaping, cuticle care, soothing massage with lotion" },
       { name: "Fancy Signature Manicure", price: 40, gelPrice: 55,
-        desc: "Sea salt soak, organic sugar scrub, warm lotion massage, warm towels; choose paraffin or hot stones." }
+        desc: "Indulge in our Signature Manicure, a meticulous treatment encompassing nail trimming, reshaping, and cuticle care. Immerse your weary hands in our sea salt soak, revitalize with organic sugar scrub, enjoy a soothing massage with warm lotion, and luxuriate in warm towels. Complete the look with our high-quality flawless nail polish and choose between a paraffin treatment or hot stone." }
     ]
   },
   {
