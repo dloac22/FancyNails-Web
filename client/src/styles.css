@@ -36,8 +36,8 @@ body{
   position: fixed;
   inset: 0;
   background: url("/assets/background/main.jpg") center / cover no-repeat;
-  filter: blur(5px) saturate(85%);
-  opacity: .22;                         /* keep it subtle */
+  filter: blur(0px) saturate(90%);
+  opacity: 100%;                         /* keep it subtle */
   transform: scale(1.05);               /* avoid edge gaps after blur */
   z-index: -2;
 }
@@ -288,10 +288,22 @@ img{
   justify-content:center;
   width:36px;height:36px;
   border-radius:999px;
-  background:#1b2028;
+  background:#ffffff;
   margin-right:8px;
   color:#cdd6e3;
-  text-decoration:none
+  text-decoration:none;
+  overflow: hidden;
+}
+
+.social-inline a img {
+  width: 65%;  
+  height: 65%;
+  object-fit: contain;
+}
+
+.social-inline a:hover {
+  transform: scale(1.1);
+  background: var(--gold); 
 }
 
 .legal{
@@ -308,6 +320,6 @@ img{
 
 /* Tweak intensity by viewport */
 @media (max-width: 768px){
-  .site-bg::before{ opacity: .18; filter: blur(8px) saturate(80%); }
+  .site-bg::before{ opacity: 100%; filter: blur(0px) saturate(90%); }
   .site-bg::after{ background: linear-gradient(180deg, rgba(0,0,0,.40), rgba(0,0,0,.55)); }
 }

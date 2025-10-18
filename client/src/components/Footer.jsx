@@ -9,10 +9,10 @@ export default function Footer() {
 			      Welcome to Fancy World- where beauty meets perfection
           </p>
           <div className="social-inline">
-            <a href="https://www.facebook.com/people/Fancy-Nails-Spa/61580311348076/" target="_blank" rel="noreferrer" aria-label="Facebook"></a>
-            <a href="https://www.instagram.com/fancynailspa75/" target="_blank" rel="noreferrer" aria-label="Instagram"></a>
-            <a href="https://www.tiktok.com/@fancy.nails.spa75" target="_blank" rel="noreferrer" aria-label="TikTok">♫</a>
-            <a href="https://www.google.com/search?q=fancy+nails" target="_blank" rel="noreferrer" aria-label="Google">G</a>
+            <a href="https://www.facebook.com/people/Fancy-Nails-Spa/61580311348076/"  rel="noreferrer" aria-label="Facebook"><img src="/assets/logo/facebook.png" /></a>
+            <a href="https://www.instagram.com/fancynailspa75/"  rel="noreferrer" aria-label="Instagram"> <img src="/assets/logo/instagram.png" /></a>
+            <a href="https://www.tiktok.com/@fancy.nails.spa75"  rel="noreferrer" aria-label="TikTok"><img src="/assets/logo/tik-tok.png"/></a>
+            <a href="https://www.google.com/search?q=fancy+nails"  rel="noreferrer" aria-label="Google"><img src="/assets/logo/google.png"  /></a>
           </div>
         </div>
 
@@ -21,7 +21,7 @@ export default function Footer() {
           <ul>
             <li>📞 (508) 373-2550</li>
             <li>📍 582 W Boylston St, Worcester, MA 01606 </li>
-            <li>📧 <a href="mailto:fancynailspa75@gmail.com">fancynailspa75@gmail.com</a></li>
+            <li>💌 fancynailspa75@gmail.com</li>
           </ul>
 
           <h3>Business hours</h3>
