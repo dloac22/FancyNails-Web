@@ -8,7 +8,7 @@ export const CATEGORIES_PREVIEW = [
   {
     slug: "pedicure",
     title: "Pedicure",
-    img: "/assets/services/pedicure.JPG",
+    img: "/assets/services/pedicure.jpg",
     snippet: "From classic to deluxe spa pedicures."
   },
   {
@@ -20,7 +20,7 @@ export const CATEGORIES_PREVIEW = [
   {
     slug: "acrylic",
     title: "Acrylic / Color Powder",
-    img: "/assets/services/acrylic.JPG",
+    img: "/assets/services/acrylic.jpg",
     snippet: "Full sets, refills, and ombré designs."
   },
   {
