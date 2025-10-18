@@ -12,7 +12,6 @@ export default function Home() {
       <section className="section container">
         <div className="section-head">
           <h2>Our Services</h2>
-          <p>Manicure • Pedicure • Dipping • Acrylic • Gel X / Builder</p>
         </div>
 
         <div className="cards">
