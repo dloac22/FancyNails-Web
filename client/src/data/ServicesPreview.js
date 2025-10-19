@@ -1,38 +1,32 @@
 export const CATEGORIES_PREVIEW = [
   {
     slug: "manicure",
-    title: "Manicure",
-    img: "/assets/services/manicure.PNG",
-    snippet: "Classic, gel, and signature manicures."
+    title: "MANICURE",
+    img1: "/assets/services/manicure.svg",
   },
   {
     slug: "pedicure",
-    title: "Pedicure",
-    img: "/assets/services/pedicure.jpg",
-    snippet: "From classic to deluxe spa pedicures."
+    title: "PEDICURE",
+    img1: "/assets/services/pedicure.svg",
   },
   {
     slug: "dipping",
-    title: "Dipping Powder",
-    img: "/assets/services/dippingPowder.jpg",
-    snippet: "Durable color with a lightweight feel."
+    title: "DIPPING POWDER",
+    img1: "/assets/services/dip.svg",
   },
   {
     slug: "acrylic",
-    title: "Acrylic / Color Powder",
-    img: "/assets/services/acrylic.jpg",
-    snippet: "Full sets, refills, and ombré designs."
+    title: "ACRYLIC / COLOR POWDER",
+    img1: "/assets/services/acrylic.svg",
   },
   {
     slug: "gelx",
-    title: "Gel X / Builder",
-    img: "/assets/services/gelX.jpg",
-    snippet: "Extensions and builder gel options."
+    title: "GEL X / BUILDER",
+    img1: "/assets/services/gelX.svg",
   },
   {
     slug: "kids",
-    title: "Kid Services (Under 9)",
-    img: "/assets/services/kidservices.JPG",
-    snippet: "Kids manicures and pedicures."
+    title: "KID SERVICES (Under 9)",
+    img1: "/assets/services/kidservices.svg",
   }
 ]

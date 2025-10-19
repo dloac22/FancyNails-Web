@@ -28,21 +28,22 @@ body{
 
 /* Background*/
 /* --- Background stack on a single wrapper --- */
-.site-bg { position: relative; min-height: 100dvh; }
+.site-bg { 
+  position: relative; 
+  min-height: 100dvh; 
+}
 
-/* The background image (vertical photo), softened + blurred */
 .site-bg::before{
   content:"";
   position: fixed;
   inset: 0;
   background: url("/assets/background/main.jpg") center / cover no-repeat;
   filter: blur(0px) saturate(90%);
-  opacity: 100%;                         /* keep it subtle */
-  transform: scale(1.05);               /* avoid edge gaps after blur */
+  opacity: 100%;                         
+  transform: scale(1.05);              
   z-index: -2;
 }
 
-/* A dark/brand-tinted overlay so content pops */
 .site-bg::after{
   content:"";
   position: fixed;
@@ -53,9 +54,11 @@ body{
   z-index: -1;
 }
 
-img{
-  max-width:100%;display:block
+.img{
+  display:block;
 }
+
+
 
 /* Containers */
 .container{
@@ -81,20 +84,68 @@ img{
 
 
 .cards{
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  transition: transform 0.2s ease;
 }
 
+
 .card{
-  background:var(--card);border:1px solid #20242b;border-radius:16px;overflow:hidden
+  background:var(--card);
+  border:1px solid #20242b;
+  border-radius:16px;
+  padding: 18px;
+  overflow:hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 280px; /* same height for all */
+  width: 280px; /* same width for all */;
+  font-size: larger;
+}
+
+.card::before{
+  content:"";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(239, 208, 10, 0.15) 10%, transparent 100%);
+  z-index: 0;
+  filter: blur(10px);
+  transform: translateX(50%);
 }
 
 .card img{
-  aspect-ratio:4/3;object-fit:cover
+  width: 60%;
+  height: 60%;
+  max-width: 250px;
+  max-height: 250px;
+  object-fit: contain;
+  filter: invert(1) brightness(1.8);
+  opacity: 0.95;
+  display: block;
+  margin: 0 auto;
 }
 
 .card-body{
   padding:12px;
   color: white;
+  justify-content: center;
+}
+
+.mail{
+  color: var(--gold);
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFE998, 0 0 40px #b3d91b;
 }
 
 
@@ -109,6 +160,8 @@ img{
   text-decoration:none;
   font-weight:600;
   background: var(--gold); 
+  margin-bottom: 0px;
+  margin-top: 20px;
 }
 
 .btn:hover{
@@ -376,8 +429,8 @@ img{
 /* Footer */
 .footer{
   background:linear-gradient(180deg,#0b0e12,#0b0e12);
-  border-top:1px solid #151922;
-  margin-top:56px
+  border-top:0px solid #151922;
+  margin-top:0px
 }
 
 .footer-grid{
@@ -433,4 +486,9 @@ img{
 @media (max-width: 768px){
   .site-bg::before{ opacity: 100%; filter: blur(0px) saturate(90%); }
   .site-bg::after{ background: linear-gradient(180deg, rgba(0,0,0,.40), rgba(0,0,0,.55)); }
+  .cards{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
 }

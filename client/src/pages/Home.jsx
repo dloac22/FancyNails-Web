@@ -19,10 +19,9 @@ export default function Home() {
         <div className="cards">
           {CATEGORIES_PREVIEW.map(c => (
             <div className="card" key={c.slug}>
-              <img src={c.img} alt={c.title} />
+              <img src={c.img1} alt={c.title} />
               <div className="card-body">
                 <h3>{c.title}</h3>
-                <p>{c.snippet}</p>
               </div>
             </div>
           ))}

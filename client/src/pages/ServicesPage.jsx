@@ -21,7 +21,7 @@ export default function ServicesPage() {
               </ul>
               <p>
                 If you are dissatisfied with the services, please share your experience at{" "}
-                <a href="mailto:fancynailspa75@gmail.com">fancynailspa75@gmail.com</a>. Your satisfaction is essential to us.
+                <a className="mail" href="mailto:fancynailspa75@gmail.com">fancynailspa75@gmail.com</a>. Your satisfaction is essential to us.
               </p>
             </div>
           </div>
