@@ -1,14 +1,17 @@
-import { WORKS_ALL } from '../data/worksAll.js'
+import { WORKS_ALL } from "../data/worksAll.js";
 
 export default function WorksPage() {
   return (
     <section className="section container">
       <h1>Our Works</h1>
-      <div className="grid">
+
+      <div className="works-grid">
         {WORKS_ALL.map((src, i) => (
-          <img key={i} src={src} alt={`Nail design ${i+1}`} loading="lazy" />
+          <figure className="work-tile" key={i}>
+            <img className="work-img" src={src} alt={`Nail design ${i + 1}`} loading="lazy" />
+          </figure>
         ))}
       </div>
     </section>
-  )
+  );
 }

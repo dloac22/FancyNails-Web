@@ -82,7 +82,6 @@ body{
   color:var(--muted)
 }
 
-
 .cards{
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -99,9 +98,7 @@ body{
 
 
 .card{
-  background:var(--card);
-  border:1px solid #20242b;
-  border-radius:16px;
+  background:none;
   padding: 18px;
   overflow:hidden;
   display: flex;
@@ -119,10 +116,10 @@ body{
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(239, 208, 10, 0.15) 10%, transparent 100%);
+  background: radial-gradient(circle, rgba(239, 208, 10, 0.15) 50%, transparent 100%);
   z-index: 0;
   filter: blur(10px);
-  transform: translateX(50%);
+  transform: translateX(60%);
 }
 
 .card img{
@@ -318,6 +315,40 @@ body{
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFE998, 0 0 40px #b3d91b;
 }
 
+/* --- Works grid --- */
+/* default: 5 columns on big screens */
+.works-grid{
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;                     /* tile spacing */
+}
+
+/* each tile has a fixed ratio so everything is the same size */
+.work-tile{
+  position: relative;
+  margin: 0;                     
+  aspect-ratio: 4 / 5;          
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0f1318;           
+  box-shadow: 0 1px 8px rgba(0,0,0,.25);
+}
+
+/* image fills the tile evenly */
+.work-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .25s ease, filter .25s ease;
+}
+
+/* subtle hover */
+.work-tile:hover .work-img{
+  transform: scale(1.03);
+  filter: saturate(1.05);
+}
+
 /* --- Full-screen background service sections --- */
 
 
@@ -478,17 +509,45 @@ body{
   font-size:13px
 }
 
-@media (max-width:900px){
+/* Fixed/parallax backgrounds are OFF on touch devices */
+@media (max-width: 1024px) {
+  .service-section,
+  .service-section::before {
+    background-attachment: scroll !important;
+  }
+
+  .site-bg::after{
+    background: linear-gradient(180deg, rgba(0,0,0,.40), rgba(0,0,0,.55));
+  }
+
+  /* 2-up grids on tablet */
+  .services-grid,
+  .cards {                         /* use whichever you’re rendering */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 20px;
+  }
+
+  /* service cards a bit shorter on tablet */
+  .service-card { height: 220px; }
+  .icon-container { height: 120px; }
+
+  .works-grid{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
   .footer-grid{grid-template-columns:1fr}
+
 }
+
 
 /* Tweak intensity by viewport */
 @media (max-width: 768px){
-  .site-bg::before{ opacity: 100%; filter: blur(0px) saturate(90%); }
+  .site-bg::before{ opacity: 90%; filter: blur(0px) saturate(80%); }
   .site-bg::after{ background: linear-gradient(180deg, rgba(0,0,0,.40), rgba(0,0,0,.55)); }
-  .cards{
+  .services-grid,
+  .cards {
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 20px;
+    gap: 16px;
   }
+  .works-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
