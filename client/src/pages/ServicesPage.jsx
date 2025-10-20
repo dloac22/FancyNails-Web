@@ -1,8 +1,23 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { SERVICES } from '../data/servicesData.js'
 const APPOINTMENTS_BG = "/assets/services/appointment.jpg";
 
+// Function that brings customer to the services section
+const slugify = s =>
+  (s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+function useScrollToHash() {
+  const { hash } = useLocation();
+  useEffect(() => {
+    if (!hash) return;
+    const el = document.getElementById(hash.slice(1));
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [hash]);
+}
 
 export default function ServicesPage() {
+  useScrollToHash();
   return (
     <section className="section container">
       <section
@@ -28,43 +43,44 @@ export default function ServicesPage() {
         </div>
       </section>
       {<h1 className="main-title">Services &amp; Prices</h1>}
-      {SERVICES.map(section => (
-      <section
-        key={section.category}
-        className="service-section"
-        style={{
-          backgroundImage: `url(${section.bg || ""})`,
-        }}
-      >
-        <div className="service-overlay">
-          <div className="container">
-            <h2>{section.category}</h2>
-            {section.category === "Acrylic / Color Powder" && (
-            <div className="gold-line"></div>)}
-            <ul className="prices">
-              {section.items.map((it, idx) => (
-                <li key={idx}>
-                  <div className="row">
-                    <strong>{it.name}</strong>
-                    <span className="amount">
-                      {it.price && `$${it.price}`}
-                      {it.priceFrom && `$${it.priceFrom}+`}
-                      {it.gelPrice && ` (Gel $${it.gelPrice})`}
-                      {it.priceNote && it.priceNote}
-                    </span>
-                  </div>
-                  {it.desc && (
-                  <p className={`muted ${section.category === "Acrylic / Color Powder" ? "muted-gold" : ""}`}>
-                    {it.desc}
-                  </p>
-                )}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-    ))}
+      {SERVICES.map(section => {
+        const id = section.slug || slugify(section.category);
+        return (
+          <section
+            id={id}                                   
+            key={id}
+            className="service-section"
+            style={{ backgroundImage: `url(${section.bg || ""})` }}
+          >
+            <div className="service-overlay">
+              <div className="container">
+                <h2>{section.category}</h2>
+                {section.category === "Acrylic / Color Powder" && <div className="gold-line" />}
+                <ul className="prices">
+                  {section.items.map((it, idx) => (
+                    <li key={idx}>
+                      <div className="row">
+                        <strong>{it.name}</strong>
+                        <span className="amount">
+                          {it.price && `$${it.price}`}
+                          {it.priceFrom && `$${it.priceFrom}+`}
+                          {it.gelPrice && ` (Gel $${it.gelPrice})`}
+                          {it.priceNote && it.priceNote}
+                        </span>
+                      </div>
+                      {it.desc && (
+                        <p className={`muted ${section.category === "Acrylic / Color Powder" ? "muted-gold" : ""}`}>
+                          {it.desc}
+                        </p>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+        );
+      })}
     </section>
-  )
+  );
 }

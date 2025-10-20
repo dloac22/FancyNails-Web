@@ -26,6 +26,10 @@
 } 
 html,body,#root{height:100%}
 
+html{
+  scroll-behavior:smooth
+}
+
 body{
   margin:0;
   font-family:system-ui, Helvetica, Arial, sans-serif;
@@ -323,6 +327,7 @@ body{
 }
 
 .service-section {
+  scroll-margin-top: 100px;
   position: relative;
   width: 100vw;
   left: 50%;

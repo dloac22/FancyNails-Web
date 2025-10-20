@@ -4,7 +4,6 @@ import { WORKS_PREVIEW } from '../data/worksPreview.js'
 import { Link } from 'react-router-dom'
 import SimpleSlider from "../components/WorkPreviewSlider.jsx";
 
-
 export default function Home() {
   return (
     <>
@@ -18,12 +17,12 @@ export default function Home() {
 
         <div className="cards">
           {CATEGORIES_PREVIEW.map(c => (
-            <div className="card" key={c.slug}>
+            <Link to={`/services#${c.slug}`} className="card" key={c.slug}>
               <img src={c.img1} alt={c.title} />
               <div className="card-body">
                 <h3>{c.title}</h3>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
