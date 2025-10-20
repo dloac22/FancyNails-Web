@@ -2,7 +2,7 @@
 export const SERVICES = [
   {
     category: "Pedicure",
-    bg: "/assets/services/pedicure1.jpg",
+    bg: "/assets/services/pedicure.jpeg",
     items: [
       { name: "The Classic", price: 40, gelPrice: 55,
         desc: "Swift, essential foot care. Includes basic cleanup and gentle massage with a warm towel." },
@@ -32,12 +32,13 @@ export const SERVICES = [
     items: [
       { name: "Full Set", priceFrom: 50 },
       { name: "Refill", priceFrom: 40 },
-      { name: "Ombre", priceFrom: 60 }
+      { name: "Ombre", priceFrom: 60 },
+      { desc: "FOR PRICING, IF YOU HAVE AN INSPO PICTURE, PLEASE SHOW US. WE CAN PROVIDE THE EXACT PRICE"}
     ]
   },
   {
     category: "Add-On",
-    bg: "/assets/services/acrylic.jpg",
+    bg: "/assets/services/addon.jpg",
     items: [
       { name: "Special Shape", price: 5 },
       { name: "Extra Length", priceFrom: 5 },

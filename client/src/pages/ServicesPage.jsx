@@ -10,9 +10,9 @@ export default function ServicesPage() {
         style={{ backgroundImage: `url(${APPOINTMENTS_BG})` }}
       >
         <div className="service-overlay">
-          <div className="container narrow">
-            <h1 className="section-title">Appointments &amp; Walk-ins Welcome</h1>
-            <div className="notice card">
+          <div className="container">
+            <h1>Appointments &amp; Walk-ins Welcome</h1>
+            <div className="service-content">
               <p><span>Gift Certificates are available!</span></p>
               <h3>10-Day Guarantee Policy</h3>
               <ul>
@@ -27,7 +27,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
+      {<h1 className="main-title">Services &amp; Prices</h1>}
       {SERVICES.map(section => (
       <section
         key={section.category}
@@ -38,8 +38,9 @@ export default function ServicesPage() {
       >
         <div className="service-overlay">
           <div className="container">
-            { <h1 className="main-title">Services &amp; Prices</h1>}
             <h2>{section.category}</h2>
+            {section.category === "Acrylic / Color Powder" && (
+            <div className="gold-line"></div>)}
             <ul className="prices">
               {section.items.map((it, idx) => (
                 <li key={idx}>
@@ -52,7 +53,11 @@ export default function ServicesPage() {
                       {it.priceNote && it.priceNote}
                     </span>
                   </div>
-                  {it.desc && <p className="muted">{it.desc}</p>}
+                  {it.desc && (
+                  <p className={`muted ${section.category === "Acrylic / Color Powder" ? "muted-gold" : ""}`}>
+                    {it.desc}
+                  </p>
+                )}
                 </li>
               ))}
             </ul>
