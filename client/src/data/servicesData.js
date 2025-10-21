@@ -2,7 +2,7 @@
 export const SERVICES = [
   {
     category: "Pedicure",
-    bg: "/assets/services/pedicure3.jpg",
+    bg: "/assets/services/pedicure3.webp",
     items: [
       { name: "The Classic", price: 40, gelPrice: 55,
         desc: "Swift, essential foot care. Includes basic cleanup and gentle massage with a warm towel." },
@@ -18,7 +18,7 @@ export const SERVICES = [
   },
   {
     category: "Manicure",
-    bg: "/assets/services/manicure.PNG",
+    bg: "/assets/services/manicure.webp",
     items: [
       { name: "Classic Manicure", price: 20, gelPrice: 35,
         desc: "Meticulous nail trimming and shaping, cuticle care, soothing massage with lotion" },
@@ -28,7 +28,7 @@ export const SERVICES = [
   },
   {
     category: "Acrylic / Color Powder",
-    bg: "/assets/services/acrylic.jpg",
+    bg: "/assets/services/acrylic.webp",
     items: [
       { name: "Full Set", priceFrom: 50 },
       { name: "Refill", priceFrom: 40 },
@@ -38,7 +38,7 @@ export const SERVICES = [
   },
   {
     category: "Add-On",
-    bg: "/assets/services/addon.jpg",
+    bg: "/assets/services/addon.webp",
     items: [
       { name: "Special Shape", price: 5 },
       { name: "Extra Length", priceFrom: 5 },
@@ -59,7 +59,7 @@ export const SERVICES = [
   },
   {
     category: "Dipping Powder",
-    bg: "/assets/services/dippingPowder.jpg",
+    bg: "/assets/services/dippingPowder.webp",
     items: [
       { name: "Dipping w/ Natural Nails", priceFrom: 45 },
       { name: "Dipping w/ Tip On", priceFrom: 50 },
@@ -69,7 +69,7 @@ export const SERVICES = [
   },
   {
     category: "Gel X / Builder",
-    bg: "/assets/services/gelX.jpg",
+    bg: "/assets/services/gelX.webp",
     items: [
       { name: "Gel X Extension", priceFrom: 65 },
       { name: "Hard/Builder Gel Full Set", priceFrom: 60 },
@@ -78,7 +78,7 @@ export const SERVICES = [
   },
   {
     category: "Kid Services (Under 9)",
-    bg: "/assets/services/kidservices.JPG",
+    bg: "/assets/services/kidservices.webp",
     items: [
       { name: "Manicure – Regular Color", price: 15 },
       { name: "Manicure – Gel Color", price: 20 },

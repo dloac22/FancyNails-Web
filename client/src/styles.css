@@ -48,7 +48,7 @@ body{
   content:"";
   position: fixed;
   inset: 0;
-  background: url("/assets/background/main.jpg") center / cover no-repeat;
+  background: url("/assets/background/main.webp") center / cover no-repeat;
   filter: blur(0px) saturate(90%);
   opacity: 100%;                         
   transform: scale(1.05);              
@@ -231,7 +231,6 @@ body{
 .nav a{
   color:#dbe1ea;
   text-decoration:none
-
 }
 
 .nav a.active{
@@ -263,9 +262,7 @@ body{
   /* --- Hero-specific background --- */
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* overlay for contrast */
-    url("/assets/background/hero.PNG") center center / cover no-repeat; /* hero image */
-
-  
+    url("/assets/background/hero.webp") center center / cover no-repeat; /* hero image */
   background-color: transparent;
   background-attachment: scroll; 
   z-index: 1;
@@ -289,8 +286,7 @@ body{
   font-weight: 700;
   text-decoration: none;
   display: inline-block; 
-  font-size: 1.5rem;
-
+  font-size: 1.2rem;
 }
 
 
@@ -566,6 +562,10 @@ body{
   font-size:13px
 }
 
+.hero-call-button-mobile {
+  display: none;
+}
+
 /* Fixed/parallax backgrounds are OFF on touch devices */
 @media (max-width: 1024px) {
   .service-section,
@@ -603,6 +603,27 @@ body{
     grid-template-columns: 1fr;
     gap: 16px;
   }
+  
+  .hero-call-button-mobile {
+    display: block;
+    margin-top: 10px;
+    background: var(--white);
+    color: var(--black);
+    border: 0;
+    padding: .7rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 0 10px #0e0e0e;
+  }
+
+  .hero-inner .btn.primary {
+      margin-bottom: 5px; /* Reduce space below Book Now if needed */
+  }
   .works-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .prices li {
     padding: 8px 0; /* Slightly reduce vertical padding */
@@ -622,5 +643,17 @@ body{
 
   .main-title{
     font-size:2.5rem;
+  }
+
+  #acrylic-color-powder h2 {
+      font-size: 1.85rem;
+  }
+
+  #dipping-powder h2 {
+      font-size: 2.8rem;
+  }
+
+  #gel-x-builder h2{
+      font-size: 2.8rem;
   }
 }

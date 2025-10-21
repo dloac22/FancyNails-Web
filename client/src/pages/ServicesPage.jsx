@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { SERVICES } from '../data/servicesData.js'
-const APPOINTMENTS_BG = "/assets/services/appointment.jpg";
+const APPOINTMENTS_BG = "/assets/services/appointment.webp";
 
 // Function that brings customer to the services section
 const slugify = s =>
@@ -55,7 +55,6 @@ export default function ServicesPage() {
             <div className="service-overlay">
               <div className="container">
                 <h2>{section.category}</h2>
-                {section.category === "Acrylic / Color Powder" && <div className="gold-line" />}
                 <ul className="prices">
                   {section.items.map((it, idx) => (
                     <li key={idx}>

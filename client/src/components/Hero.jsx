@@ -7,6 +7,9 @@ export default function Hero() {
         <a className="btn primary" href="http://fancynailandspa75.booksy.com/a/" target="_blank" rel="noreferrer">
         Book Now
         </a>
+        <a href="tel:+15083732550" className="btn secondary hero-call-button-mobile">
+          📞 Call Us
+        </a>
       </div>
     </section>
   )

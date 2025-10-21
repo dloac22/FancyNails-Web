@@ -1,12 +1,12 @@
 
 export default function Gallery() {
   const list = images.length ? images : [
-    "/assets/gallery/works1.jpg",
-    "/assets/gallery/works2.jpg",
-    "/assets/gallery/works3.jpg",
-    "/assets/gallery/works4.jpg",
-    "/assets/gallery/works5.jpg",
-    "/assets/gallery/works6.jpg"
+    "/assets/gallery/works1.webp",
+    "/assets/gallery/works2.webp",
+    "/assets/gallery/works3.webp",
+    "/assets/gallery/works4.webp",
+    "/assets/gallery/works5.webp",
+    "/assets/gallery/works6.webp"
   ];
   return (
     <div className="grid">

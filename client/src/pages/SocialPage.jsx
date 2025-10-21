@@ -50,7 +50,7 @@ export default function SocialPage() {
 
       {/* Google Reviews Section*/}
       <script src="https://elfsightcdn.com/platform.js" async></script>
-      <div class="elfsight-app-1ca6b394-bce9-49cc-9f83-b9234ece17cd" data-elfsight-app-lazy></div>
+      <div class="elfsight-app-30faea96-95eb-4371-87a4-06a7af6a31a3" data-elfsight-app-lazy></div>
     </section>
   )
 }
