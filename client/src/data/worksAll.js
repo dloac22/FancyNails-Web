@@ -10,5 +10,8 @@ export const WORKS_ALL = [
   "/assets/gallery/work8.jpg",
   "/assets/gallery/work9.jpg",
   "/assets/gallery/work10.jpg",
-  "/assets/gallery/work11.jpg"
+  "/assets/gallery/work11.jpg",
+  "/assets/gallery/work12.jpg",
+  "/assets/gallery/work13.jpg",
+  "/assets/gallery/work14.jpg",
 ]

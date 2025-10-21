@@ -2,7 +2,7 @@
 export const SERVICES = [
   {
     category: "Pedicure",
-    bg: "/assets/services/pedicure.jpeg",
+    bg: "/assets/services/pedicure3.jpg",
     items: [
       { name: "The Classic", price: 40, gelPrice: 55,
         desc: "Swift, essential foot care. Includes basic cleanup and gentle massage with a warm towel." },

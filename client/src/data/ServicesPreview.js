@@ -10,22 +10,22 @@ export const CATEGORIES_PREVIEW = [
     img1: "/assets/services/pedicure.svg",
   },
   {
-    slug: "dipping",
+    slug: "dipping-powder",
     title: "DIPPING POWDER",
     img1: "/assets/services/dip.svg",
   },
   {
-    slug: "acrylic",
+    slug: "acrylic-color-powder",
     title: "ACRYLIC / COLOR POWDER",
     img1: "/assets/services/acrylic.svg",
   },
   {
-    slug: "gelx",
+    slug: "gel-x-builder",
     title: "GEL X / BUILDER",
     img1: "/assets/services/gelX.svg",
   },
   {
-    slug: "kids",
+    slug: "kid-services-under-9",
     title: "KID SERVICES (Under 9)",
     img1: "/assets/services/kidservices.svg",
   }

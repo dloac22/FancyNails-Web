@@ -134,8 +134,8 @@ body{
 }
 
 .card img{
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 50%;
   max-width: 250px;
   max-height: 250px;
   object-fit: contain;
@@ -314,11 +314,13 @@ body{
 .row{
   display:flex;
   justify-content:space-between;
-  gap:12px
+  gap:12px;
+  font-size:larger;
 }
 
 .muted{
   color:var(--white);
+  font-size: small;
 }
 
 .amount{
@@ -364,7 +366,7 @@ body{
   text-align: center;
   margin-bottom: 20px;
   font-family: 'retro', sans-serif;
-  text-shadow: 0 0 5px #fff;
+  text-shadow: 0 0 1px #fff;
 }
 
 .service-section .prices li {
@@ -397,11 +399,11 @@ body{
 }
 
 .main-title{
-  background:var(--bg);
-  font-size:2rem;
+  font-size:3rem;
   padding:20px;
   text-align:center;
   margin:0;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 /* --- Works grid (WorksPage)--- */
@@ -463,6 +465,54 @@ body{
   opacity: 1;
 }
 
+/* Social Cards */
+.social-cards{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  transition: transform 0.2s ease;
+}
+
+.cards a.card {
+  text-decoration: none;
+}
+
+/* === Social Page Specific Styles === */
+
+.social-cards .card {
+  height: auto; 
+  min-height: 150px; 
+  align-items: flex-start; 
+  display:flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
+
+.social-cards .card-body {
+  flex-grow: 1; 
+}
+
+.social-cards h3 {
+  color: var(--white);
+  align-items: center;
+}
+
+.social-cards .card p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: 10px;
+}
 
 /* Footer */
 .footer{
@@ -538,11 +588,8 @@ body{
   /* service cards a bit shorter on tablet */
   .service-card { height: 220px; }
   .icon-container { height: 120px; }
-
   .works-grid{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
-
   .footer-grid{grid-template-columns:1fr}
-
 }
 
 
@@ -557,4 +604,23 @@ body{
     gap: 16px;
   }
   .works-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .prices li {
+    padding: 8px 0; /* Slightly reduce vertical padding */
+  }
+
+  /* Reduce font size for service name and price on mobile */
+  .prices li strong,
+  .prices li .amount {
+    font-size: 0.9rem; /* Adjust this value as needed (e.g., 0.85rem, 14px) */
+  }
+
+  /* Reduce font size for the description text as well */
+  .prices li p.muted {
+    font-size: 0.8rem; /* Make description slightly smaller */
+    margin-top: 2px; /* Adjust space above description */
+  }
+
+  .main-title{
+    font-size:2.5rem;
+  }
 }
