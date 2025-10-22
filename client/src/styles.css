@@ -445,8 +445,8 @@ body{
 }
 
 .works-slider .slide img {
-  width: 100%;
-  height: 600px;
+  width: 600px;
+  height: 500px;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -604,6 +604,12 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+    .works-slider .slide img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
   }
   
   .hero-call-button-mobile {

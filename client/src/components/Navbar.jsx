@@ -22,7 +22,7 @@ export default function Navbar() {
     <div className="navbar-container">
       {/* Brand */}
       <Link to="/" className="navbar-logo" onClick={() => setOpen(false)}>
-        <img src="/assets/logo/noBG.webp" alt="Fancy Nails & Spa Logo" />
+        <img src="/assets/logo/noBG.webp" alt="Nail Salons in Worcester, MA" />
         <h1>Fancy Nails & Spa</h1>
       </Link>
 

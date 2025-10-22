@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-grid container">
         <div className="about">
-          <img src="/assets/logo/noBG.webp" className="mono" alt="Fancy Nails" />
+          <img src="/assets/logo/noBG.webp" className="mono" alt="Worcester Nail Salons" />
           <p>
             <strong>Fancy Nails & Spa</strong> in Worcester, Massachusetts.
 			      Welcome to Fancy World- where beauty meets perfection
@@ -45,7 +45,7 @@ export default function Footer() {
       </div>
 
       <div className="legal">
-        ©2025 Fancy Nails & Spa design by <a href="https://github.com/dloac22" target="_blank" rel="noreferrer">Datthe</a> • All Rights Reserved | worcester nail salons | worcester nail salon | nails salon near me
+        ©{new Date().getFullYear()} Fancy Nails & Spa • Worcester, MA • Design by <a href="https://github.com/dloac22" target="_blank" rel="noreferrer">Datthe</a> • All Rights Reserved 
       </div>
     </footer>
   )
