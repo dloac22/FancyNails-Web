@@ -2,25 +2,25 @@ export default function SocialPage() {
   const links = [
     {
       name: "Facebook",
-      img: "/assets/logo/facebook.png",
+      img: "/assets/logo/facebook.webp",
       href: "https://www.facebook.com/people/Fancy-Nails-Spa/61580311348076/",
       description: "Follow our page for stunning nail designs, self-care tips, and all the beauty inspiration you need!" 
     },
     {
       name: "Instagram",
-      img: "/assets/logo/instagram.png",
+      img: "/assets/logo/instagram.webp",
       href: "https://www.instagram.com/fancynailspa75/",
       description: "Hey there, beauty lovers! 💅 Don’t forget to hit “Follow” so you never miss our latest nail inspo & salon vibes!" 
     },
     {
       name: "TikTok",
-      img: "/assets/logo/tik-tok.png",
+      img: "/assets/logo/tik-tok.webp",
       href: "https://www.tiktok.com/@fancy.nails.spa75",
       description: "Follow us on TikTok for more nail inspo, behind-the-scenes fun & salon vibes! 💅🎬" 
     },
     {
       name: "Google",
-      img: "/assets/logo/google.png",
+      img: "/assets/logo/google.webp",
       href: "https://www.google.com/search?q=fancy+nails",
       description: "" // Blank description
     },

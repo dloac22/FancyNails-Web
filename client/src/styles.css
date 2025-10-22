@@ -526,6 +526,7 @@ body{
 
 .footer .mono{
   width:64px;
+  height: 64px;
   margin-bottom:10px;
   filter:drop-shadow(0 0 12px var(--ring))
 }
@@ -534,7 +535,8 @@ body{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  width:36px;height:36px;
+  width:36px;
+  height:36px;
   border-radius:999px;
   background:#ffffff;
   margin-right:8px;

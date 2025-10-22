@@ -3,19 +3,22 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-grid container">
         <div className="about">
-          <img src="/assets/logo/noBG.png" className="mono" alt="Fancy Nails" />
+          <img src="/assets/logo/noBG.webp" className="mono" alt="Fancy Nails" />
           <p>
             <strong>Fancy Nails & Spa</strong> in Worcester, Massachusetts.
 			      Welcome to Fancy World- where beauty meets perfection
           </p>
           <div className="social-inline">
-            <a href="https://www.facebook.com/people/Fancy-Nails-Spa/61580311348076/"  rel="noreferrer" aria-label="Facebook"><img src="/assets/logo/facebook.png" /></a>
-            <a href="https://www.instagram.com/fancynailspa75/"  rel="noreferrer" aria-label="Instagram"> <img src="/assets/logo/instagram.png" /></a>
-            <a href="https://www.tiktok.com/@fancy.nails.spa75"  rel="noreferrer" aria-label="TikTok"><img src="/assets/logo/tik-tok.png"/></a>
-            <a href="https://www.google.com/search?q=fancy+nails"  rel="noreferrer" aria-label="Google"><img src="/assets/logo/google.png"  /></a>
+            <a href="https://www.facebook.com/people/Fancy-Nails-Spa/61580311348076/"  rel="noreferrer" aria-label="Facebook"><img src="/assets/logo/facebook.webp" /></a>
+            <a href="https://www.instagram.com/fancynailspa75/"  rel="noreferrer" aria-label="Instagram"> <img src="/assets/logo/instagram.webp" /></a>
+            <a href="https://www.tiktok.com/@fancy.nails.spa75"  rel="noreferrer" aria-label="TikTok"><img src="/assets/logo/tik-tok.webp"/></a>
+            <a href="https://www.google.com/search?q=fancy+nails"  rel="noreferrer" aria-label="Google"><img src="/assets/logo/google.webp"  /></a>
           </div>
         </div>
-
+        
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+        <div class="elfsight-app-2d0be339-2bb7-49b1-923c-26646210e309" data-elfsight-app-lazy></div>
+        
         <div className="contact">
           <h3>Contact Us</h3>
           <ul>
